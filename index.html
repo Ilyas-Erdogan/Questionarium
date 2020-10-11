@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+        <link rel="icon" href = "icon.png">
+        <title>Questionarium</title>
+    </head>
+    <body>
+        <h1>Questionarium</h1>
+        <h3 style = "text-align: center;">Ask a Question:</h3>
+        <form class =  action="">
+            <div style = "text-align: center;"><input name = "question" id = "typed-question" type = "text" placeholder = "What is an integer?"></div>
+            <div style = "text-align: center;"><input class = button1 id = "submit-question" type = "submit" value = "Submit" onclick="addQuestionEN(); return false;"> </div>
+            <br>
+        </form>
+        <div class = previous-questions-border>
+            <h3 style = "text-align: center;">Previous Questions:</h3>
+            <table id = "question-table" class = table-centering>
+                <tr>
+                    <th>Question</th>
+                    <th>Have This Question Too?</th>
+                    <th># of Students Asking This</th>
+                </tr>
+            </table>
+        </div>
+        <h3 class = about-section>About:</h3>
+        <p class = about-section>Questionarium is a questionaire mini-forum for teachers and students. 
+            Students anonymously submit questions and everyone can see what was asked. 
+            If someone has the same question, they can click the "I have this question too!" button.
+            That way, the teacher will know how many students are struggling and if something needs to be reviewed.
+            It saves space and creates less clutter inside a chatroom for video meeting services such as
+            Zoom, Google Meets, and Microsoft Teams.
+        </p>
+        <p>Parlez Français?</p>
+        <a href="homefr.html">
+            <input type = "image" id = "french-image" alt = "FR" src = 'quebec_flag.png'>
+        </a>
+        <script type = "text/javascript" src = "home.js"></script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+        <link rel="icon" href = "icon.png">
+        <title>Questionarium</title>
+    </head>
+    <body>
+        <h1>Questionarium</h1>
+        <h3>Pose une question:</h3>
+        <form action="">
+            <div style = "text-align: center;"><input name = "question" id = "typed-question" type = "text" placeholder = "Qu'est-ce qu'un nombre entier ?"></div>
+            <br><br>
+            <div style = "text-align: center;"><input class = button1 id = "submit-question" type = "submit" value = "Soumettre" onclick="addQuestionFR(); return false;"> </div>
+        </form>
+        <div class = previous-questions-border>
+            <h3 style = "text-align: center;">Questions Précédents:</h3>
+            <table id = "question-table" class = table-centering>
+                <tr>
+                    <th>Question</th>
+                    <th>Avez-vous cette question aussi?</th>
+                    <th># d'étudiants Qui Posent Cette Question</th>
+                </tr>
+            </table>
+        </div>
+        <h3 class = about-section>À-propos:</h3>
+        <p class = about-section>Questionarium est un mini-forum de questions pour les enseignants et les étudiants. 
+            Les étudiants soumettent des questions de manière anonyme et chacun peut voir ce qui a été demandé. 
+            Si quelqu'un a la même question, il peut cliquer sur le bouton "J'ai aussi cette question !".
+            De cette façon, l'enseignant saura combien d'élèves ont des difficultés et si quelque chose doit être revu.
+            Cela permet également de gagner de l'espace et d'éviter l'encombrement d'un salon de discussion pour les services de réunion vidéo tels que
+            Zoom, Google Meets, et Microsoft Teams.
+        </p>
+        <script type = "text/javascript" src = "home.js"></script>
+        <p>Speak English?</p>
+        <a href = "index.html">
+            <input type = "image" id = "english-image" alt = "FR" src = 'canadian_flag.png'>
+        </a>
+    </body>
+</html>
